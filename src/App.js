@@ -1,73 +1,80 @@
 import React, { Component } from 'react';
 import './App.css';
-import {Tab, Nav, Grid, Row, Col, NavItem} from 'react-bootstrap';
+import {Nav, Navbar, Grid, Row, Col, NavItem} from 'react-bootstrap';
+import {Router, Route, Redirect} from 'react-router-dom';
+import {LinkContainer} from 'react-router-bootstrap';
+import createHistory from 'history/createBrowserHistory';
+
+const history = createHistory();
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      wordgameOpen:false
     };
   }
 
-  toggle = (stateKey) => {
-    this.setState({
-      [stateKey]: !this.state[stateKey]
-    });
-  }
-
   render() {
+    function fixHeight(e) {
+      const iframe = e.target;
+      iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
+    }
+
     return (
-      <Grid>
-        <Row>
-          <Col>&nbsp;
-          </Col>
-        </Row>
-        <Row>
-          <Col>
-            <Tab.Container id="left-tabs-example" defaultActiveKey="desc">
-              <Row className="clearfix">
-                <Col sm={3}>
-                  <Nav bsStyle="pills" stacked>
-                    <NavItem eventKey="desc">
-                     Description
-                    </NavItem>
-                    <NavItem eventKey="minesweeper">
-                     Minesweeper
-                    </NavItem>
-                    <NavItem eventKey="wordgame">
-                      WordGame
-                    </NavItem>
-                    <NavItem eventKey="cv">
-                      Curriculum Vitae
-                    </NavItem>
-                  </Nav>
-                </Col>
-                <Col sm={9}>
-                  <Tab.Content animation>
-                    <Tab.Pane eventKey="desc">
-                      This is a portfolio of projects used in investigations into technologies by Paul Potsides.
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="minesweeper">
-                      Minesweeper implemented using react.
-                      <iframe src="/minesweeper" title="minesweeper"></iframe>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="wordgame">
-                      A simple word game implemented using react.  Select words of the length suggested by the box below the grid.  The + will start a new game.
-                      The ♺ will reset the game. The ? will provide a hint.  If the game can no longer be completed, the ♺ will rotate.
-                      <iframe src="/wordgame" title="wordgame"></iframe>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="cv">
-                      CV implemented using react and react-bootstrap.
-                      <iframe src="/cv" title="cv"></iframe>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Col>
-              </Row>
-            </Tab.Container>
-          </Col>
-        </Row>
-      </Grid>
+      <Router history={history}>
+        <Grid>
+          <Row>
+            <Col>
+              <Navbar>
+                <Navbar.Header>
+                  <Navbar.Brand>
+                    Portfolio
+                  </Navbar.Brand>
+                </Navbar.Header>
+                <Nav>
+                  <LinkContainer to="/r/home">
+                    <NavItem>Home</NavItem>
+                  </LinkContainer>
+                  <LinkContainer to="/r/cv">
+                    <NavItem>Curriculum Vitae</NavItem>
+                  </LinkContainer>
+                  <LinkContainer to="/r/minesweeper">
+                    <NavItem>Minesweeper</NavItem>
+                  </LinkContainer>
+                  <LinkContainer to="/r/wordgame">
+                    <NavItem>Word Game</NavItem>
+                  </LinkContainer>
+                </Nav>
+              </Navbar>
+            </Col>
+          </Row>
+          <Row>
+            <Redirect from="/" exact to="/r/home" />
+            <Route path="/r/home" render={() => {
+              return <div>This is a portfolio of projects used in investigations into technologies by Paul Potsides.</div>;
+            }} />
+            <Route path="/r/cv" render={() => {
+              return <div>
+              CV implemented using react and react-bootstrap.
+              <iframe src="/cv" title="cv" onLoad={fixHeight}></iframe>
+              </div>;
+            }} />
+            <Route path="/r/minesweeper" render={() => {
+              return <div>
+              Minesweeper implemented using react.
+              <iframe src="/minesweeper" title="minesweeper" onLoad={fixHeight}></iframe>
+              </div>;
+            }} />
+            <Route path="/r/wordgame" render={() => {
+              return <div>
+              A simple word game implemented using react.  Select words of the length suggested by the box below the grid.  The + will start a new game.
+              The ♺ will reset the game. The ? will provide a hint.  If the game can no longer be completed, the ♺ will rotate.
+              <iframe src="/wordgame" title="wordgame" onLoad={fixHeight}></iframe>
+              </div>;
+            }} />
+            </Row>
+        </Grid>
+      </Router>
     );
   }
 }
