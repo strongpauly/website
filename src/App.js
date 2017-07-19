@@ -51,7 +51,7 @@ class App extends Component {
           <Row>
             <Redirect from="/" exact to="/r/home" />
             <Route path="/r/home" render={() => {
-              return <div><p>This is a portfolio of projects used in investigations into technologies by London based, full stack developer, Paul Potsides.</p>
+              return <div className="container"><p>This is a portfolio of projects used in investigations into technologies by London based, full stack developer, Paul Potsides.</p>
               <p>Currently, this is mainly client side and react based projects, but I will hopefully be expanding this into some Java or Node based middle tier projects too.</p>
               <p>This site was built using react, react-bootstrap and react-router.  It&apos;s source can be found here <a href="https://www.github.com/strongpauly/website">here</a>
               </p>
@@ -59,27 +59,33 @@ class App extends Component {
             }} />
             <Route path="/r/cv" render={() => {
               return <div>
+              <div className="container">
               CV implemented using react, react-bootstrap and <a href="https://jsonresume.org/schema/">jsonresume</a>.
               It&apos;s source can be found <a href="https://www.github.com/strongpauly/cv">here</a>.
+              </div>
               <iframe src="/cv" title="cv" onLoad={fixHeight}></iframe>
               </div>;
             }} />
             <Route path="/r/minesweeper" render={() => {
               return <div>
-              An implementation of the classic game using react. It&apos;s source can be found <a href="https://www.github.com/strongpauly/minesweeper">here</a>.
+              <div className="container">
+                An implementation of the classic game using react. It&apos;s source can be found <a href="https://www.github.com/strongpauly/minesweeper">here</a>.
+              </div>
               <iframe src="/minesweeper" title="minesweeper" onLoad={fixHeight}></iframe>
               </div>;
             }} />
             <Route path="/r/wordgame" render={() => {
               return <div>
-              A simple word game implemented using react.  Select words of the length suggested by the box below the grid.
-              <ul>
-                <li>The + will start a new game.</li>
-                <li>The ♺ will reset the game.</li>
-                <li>The ? will provide a hint. </li>
-              </ul>
-              If the game can no longer be completed, the ♺ will rotate.
-              It&apos;s source can be found <a href="https://www.github.com/strongpauly/wordgame">here</a>.
+              <div className="container">
+                A simple word game implemented using react.  Select words of the length suggested by the box below the grid.
+                <ul>
+                  <li>The + will start a new game.</li>
+                  <li>The ♺ will reset the game.</li>
+                  <li>The ? will provide a hint. </li>
+                </ul>
+                If the game can no longer be completed, the ♺ will rotate.
+                It&apos;s source can be found <a href="https://www.github.com/strongpauly/wordgame">here</a>.
+              </div>
               <iframe src="/wordgame" title="wordgame" onLoad={fixHeight}></iframe>
               </div>;
             }} />
