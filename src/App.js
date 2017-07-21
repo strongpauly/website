@@ -15,9 +15,11 @@ class App extends Component {
   }
 
   render() {
-    function fixHeight(e) {
+    //Resizes the iframe to it's content, then sets focus.
+    function fixFrame(e) {
       const iframe = e.target;
       iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
+      iframe.contentWindow.focus();
     }
 
     return (
@@ -66,7 +68,7 @@ class App extends Component {
                 CV implemented using react, react-bootstrap and <a href="https://jsonresume.org/schema/">jsonresume</a>.
                 It&apos;s source can be found <a href="https://www.github.com/strongpauly/cv">here</a>.
                 </div>
-                <iframe src="/cv" title="cv" onLoad={fixHeight}></iframe>
+                <iframe src="/cv" title="cv" onLoad={fixFrame}></iframe>
               </div>;
             }} />
             <Route path="/r/minesweeper" render={() => {
@@ -74,7 +76,7 @@ class App extends Component {
                 <div className="container">
                   An implementation of the classic game using react. It&apos;s source can be found <a href="https://www.github.com/strongpauly/minesweeper">here</a>.
                 </div>
-                <iframe src="/minesweeper" title="minesweeper" onLoad={fixHeight}></iframe>
+                <iframe src="/minesweeper" title="minesweeper" onLoad={fixFrame}></iframe>
               </div>;
             }} />
             <Route path="/r/wordgame" render={() => {
@@ -89,7 +91,7 @@ class App extends Component {
                   If the game can no longer be completed, the ♺ will rotate.
                   It&apos;s source can be found <a href="https://www.github.com/strongpauly/wordgame">here</a>.
                 </div>
-                <iframe src="/wordgame" title="wordgame" onLoad={fixHeight}></iframe>
+                <iframe src="/wordgame" title="wordgame" onLoad={fixFrame}></iframe>
               </div>;
             }} />
             <Route path="/r/tetris" render={() => {
@@ -98,7 +100,7 @@ class App extends Component {
                   The classic Gameboy game implemented with react and redux.
                   It&apos;s source can be found <a href="https://github.com/strongpauly/tetris">here</a>.
                 </div>
-                <iframe src="/tetris" title="tetris" onLoad={fixHeight}></iframe>
+                <iframe src="/tetris" title="tetris" onLoad={fixFrame}></iframe>
               </div>;
             }} />
           </Row>
