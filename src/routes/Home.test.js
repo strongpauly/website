@@ -9,4 +9,9 @@ describe('Home', () => {
     const app = shallow(<Home/>);
     expect(app).toMatchSnapshot();
   });
+
+  it('creates a #homeContainer', () => {
+    const app = shallow(<Home/>);
+    expect(app.find('#homeContainer')).toHaveLength(1);
+  });
 });

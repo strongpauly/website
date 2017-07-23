@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tetris renders without crashing 1`] = `
+<div
+  id="tetrisContainer"
+>
+  <div
+    className="container"
+  >
+    The classic Gameboy game implemented with react and redux. It's source can be found 
+    <a
+      href="https://github.com/strongpauly/tetris"
+    >
+      here
+    </a>
+    .
+  </div>
+  <HiFrame
+    src="/tetris"
+    title="tetris"
+  />
+</div>
+`;

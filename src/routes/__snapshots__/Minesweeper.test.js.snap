@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Minesweeper renders without crashing 1`] = `
+<div
+  id="minesweeperContainer"
+>
+  <div
+    className="container"
+  >
+    An implementation of the classic game using react. It's source can be found 
+    <a
+      href="https://www.github.com/strongpauly/minesweeper"
+    >
+      here
+    </a>
+    .
+  </div>
+  <HiFrame
+    src="/minesweeper"
+    title="minesweeper"
+  />
+</div>
+`;

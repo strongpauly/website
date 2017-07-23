@@ -4,7 +4,7 @@ import HiFrame from '../components/HiFrame';
 export default class Home extends Component {
 
   render() {
-    return <div id="wordgameContainer">
+    return <div id="wordGameContainer">
       <div className="container">
         A simple word game implemented using react.  Select words of the length suggested by the box below the grid.
         <ul>

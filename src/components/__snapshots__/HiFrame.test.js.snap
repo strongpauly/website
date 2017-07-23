@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HiFrame renders without crashing 1`] = `
+<iframe
+  onLoad={[Function]}
+  src="somewhere"
+  title="something"
+/>
+`;
