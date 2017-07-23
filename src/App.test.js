@@ -1,10 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
-
+import {mount} from 'enzyme';
 /* eslint-env jest */
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+
+
+describe('Website', () => {
+  it('renders home by default', () => {
+    const app = mount(<App />);
+    expect(app.find('#homeContainer')).toHaveLength(1);
+  });
 });
