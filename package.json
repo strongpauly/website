@@ -2,7 +2,7 @@
   "name": "potsides",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://paul.potsides.com",
+  "homepage": "http://paul.potsides.com",
   "dependencies": {
     "history": "^4.6.3",
     "react": "^15.6.1",
@@ -12,12 +12,32 @@
     "react-router-dom": "^4.1.2"
   },
   "devDependencies": {
-    "react-scripts": "1.0.10"
+    "coveralls": "^2.13.1",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.5.1",
+    "react-dom": "^15.6.1",
+    "react-scripts": "1.0.10",
+    "react-test-renderer": "^15.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "npm test -- --coverage ",
+    "coveralls": "npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/build/**",
+      "!**/coverage/**",
+      "!**/src/index.js",
+      "!**/src/registerServiceWorker.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
