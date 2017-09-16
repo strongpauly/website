@@ -21,6 +21,10 @@ exports[`Routes renders correct routes 1`] = `
   />
   <Route
     component={[Function]}
+    path="/r/oss"
+  />
+  <Route
+    component={[Function]}
     path="/r/minesweeper"
   />
   <Route

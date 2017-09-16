@@ -12,7 +12,7 @@ exports[`Home renders without crashing 1`] = `
     Currently, this is mainly client side and react based projects, but I will hopefully be expanding this into some Java or Node based middle tier projects too.
   </p>
   <p>
-    This site was built using react, react-bootstrap and react-router.  It's source can be found here 
+    This site was built using react, react-bootstrap and react-router.  It's source can be found 
     <a
       href="https://www.github.com/strongpauly/website"
     >
