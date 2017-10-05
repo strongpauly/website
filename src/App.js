@@ -44,6 +44,9 @@ class App extends Component {
                       <MenuItem>Tetris</MenuItem>
                     </LinkContainer>
                   </NavDropdown>
+                  <LinkContainer to="/r/fleetway">
+                    <MenuItem>Fleetway</MenuItem>
+                  </LinkContainer>
                 </Nav>
               </Navbar>
             </Col>

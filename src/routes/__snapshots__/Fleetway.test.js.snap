@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home renders without crashing 1`] = `
+<div
+  className="container"
+  id="fleetwayContainer"
+>
+  <p>
+    This is a injectable search bar that I developed for a client Fleetway travel.  It downloads an injector js file which then requests other css and javascript files to build the angular component.  Executing the search will take you to their site.
+  </p>
+  <search-widget />
+  <Script
+    attributes={
+      Object {
+        "id": "travelsmartInjector",
+      }
+    }
+    onCreate={[Function]}
+    onError={[Function]}
+    onLoad={[Function]}
+    url="http://travelsmart.stage.fleetway.com/ng/injector.js?aid=fw"
+  />
+</div>
+`;

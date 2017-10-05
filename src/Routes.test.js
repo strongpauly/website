@@ -7,6 +7,7 @@ import CV from './routes/CV';
 import Minesweeper from './routes/Minesweeper';
 import WordGame from './routes/WordGame';
 import Tetris from './routes/Tetris';
+import Fleetway from './routes/Fleetway';
 /* eslint-env jest */
 
 describe('Routes', () => {
@@ -24,5 +25,6 @@ describe('Routes', () => {
     expect(pathMap['/r/minesweeper']).toBe(Minesweeper);
     expect(pathMap['/r/wordgame']).toBe(WordGame);
     expect(pathMap['/r/tetris']).toBe(Tetris);
+    expect(pathMap['/r/fleetway']).toBe(Fleetway);
   });
 });
