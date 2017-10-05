@@ -45,7 +45,7 @@ class App extends Component {
                     </LinkContainer>
                   </NavDropdown>
                   <LinkContainer to="/r/fleetway">
-                    <MenuItem>Fleetway</MenuItem>
+                    <NavItem>Fleetway</NavItem>
                   </LinkContainer>
                 </Nav>
               </Navbar>
