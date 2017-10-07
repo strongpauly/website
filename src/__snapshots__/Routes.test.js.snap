@@ -5,16 +5,18 @@ exports[`Routes renders correct routes 1`] = `
   bsClass="row"
   componentClass="div"
 >
-  <Redirect
-    exact={true}
-    from="/"
-    push={false}
-    to="/r/home"
-  />
-  <Route
-    component={[Function]}
-    path="/r/home"
-  />
+  <Switch>
+    <Redirect
+      exact={true}
+      from="/"
+      push={false}
+      to="/r/home"
+    />
+    <Route
+      component={[Function]}
+      path="/r/home"
+    />
+  </Switch>
   <Route
     component={[Function]}
     path="/r/cv"
@@ -33,6 +35,7 @@ exports[`Routes renders correct routes 1`] = `
   />
   <Route
     component={[Function]}
+    exact={true}
     path="/r/tetris"
   />
   <Route

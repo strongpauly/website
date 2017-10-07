@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Row} from 'react-bootstrap';
-import {Route, Redirect} from 'react-router-dom';
+import {Route, Redirect, Switch} from 'react-router-dom';
 
 //Routes
 import Home from './routes/Home';
@@ -16,17 +16,18 @@ class Routes extends Component {
   render() {
     return (
       <Row>
-        <Redirect from="/" exact to="/r/home" />
-        <Route path="/r/home" component={Home} />
+        <Switch>
+          <Redirect from="/" exact to="/r/home" />
+          <Route path="/r/home" component={Home} />
+        </Switch>
         <Route path="/r/cv" component={CV} />
         <Route path="/r/oss" component={Oss} />
         <Route path="/r/minesweeper" component={Minesweeper} />
         <Route path="/r/wordgame" component={WordGame} />
-        <Route path="/r/tetris" component={Tetris}/>
+        <Route exact path="/r/tetris" component={Tetris}/>
         <Route path="/r/fleetway" component={Fleetway}/>
       </Row>
     );
   }
 }
-
 export default Routes;
