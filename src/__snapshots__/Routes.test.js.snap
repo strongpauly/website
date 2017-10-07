@@ -35,7 +35,6 @@ exports[`Routes renders correct routes 1`] = `
   />
   <Route
     component={[Function]}
-    exact={true}
     path="/r/tetris"
   />
   <Route

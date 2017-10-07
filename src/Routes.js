@@ -24,7 +24,7 @@ class Routes extends Component {
         <Route path="/r/oss" component={Oss} />
         <Route path="/r/minesweeper" component={Minesweeper} />
         <Route path="/r/wordgame" component={WordGame} />
-        <Route exact path="/r/tetris" component={Tetris}/>
+        <Route path="/r/tetris" component={Tetris}/>
         <Route path="/r/fleetway" component={Fleetway}/>
       </Row>
     );
