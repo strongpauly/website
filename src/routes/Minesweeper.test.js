@@ -1,5 +1,5 @@
 import React from 'react';
-import Minesweeper from './Minesweeper';
+import {Minesweeper} from './Minesweeper';
 import {shallow} from 'enzyme';
 
 /* eslint-env jest */

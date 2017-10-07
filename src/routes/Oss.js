@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Oss extends Component {
+export class Oss extends Component {
 
   render() {
     return <div id="ossContainer" className="container">

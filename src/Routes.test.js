@@ -1,13 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import { Route } from 'react-router';
-import Routes from './Routes.js';
-import Home from './routes/Home';
-import CV from './routes/CV';
-import Minesweeper from './routes/Minesweeper';
-import WordGame from './routes/WordGame';
-import Tetris from './routes/Tetris';
-import Fleetway from './routes/Fleetway';
+import {Routes} from './Routes.js';
+import {Home} from './routes/Home';
+import {CV} from './routes/CV';
+import {Minesweeper} from './routes/Minesweeper';
+import {WordGame} from './routes/WordGame';
+import {Tetris} from './routes/Tetris';
+import {Fleetway} from './routes/Fleetway';
 /* eslint-env jest */
 
 describe('Routes', () => {

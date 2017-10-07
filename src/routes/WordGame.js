@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HiFrame from '../components/HiFrame';
 
-export default class Home extends Component {
+export class WordGame extends Component {
 
   render() {
     return <div id="wordGameContainer">

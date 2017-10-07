@@ -1,5 +1,5 @@
 import React from 'react';
-import Tetris from './Tetris';
+import {Tetris} from './Tetris';
 import {shallow} from 'enzyme';
 
 /* eslint-env jest */

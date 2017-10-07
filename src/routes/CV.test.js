@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from './CV';
+import {CV} from './CV';
 import {shallow} from 'enzyme';
 
 /* eslint-env jest */

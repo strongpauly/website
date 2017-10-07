@@ -1,5 +1,5 @@
 import React from 'react';
-import Oss from './Oss';
+import {Oss} from './Oss';
 import {shallow} from 'enzyme';
 
 /* eslint-env jest */

@@ -1,5 +1,5 @@
 import React from 'react';
-import WordGame from './WordGame';
+import {WordGame} from './WordGame';
 import {shallow} from 'enzyme';
 
 /* eslint-env jest */

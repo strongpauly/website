@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Script from 'react-load-script';
 
-export default class Fleetway extends Component {
+export class Fleetway extends Component {
 
   render() {
     return <div id="fleetwayContainer" className="container">

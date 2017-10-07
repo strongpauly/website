@@ -15,7 +15,6 @@ export default class HiFrame extends Component {
       iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
       iframe.contentWindow.focus();
     }
-
     return <iframe src={this.props.src} title={this.props.title} onLoad={fixFrame}></iframe>;
   }
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class Home extends Component {
+export class Home extends Component {
 
   render() {
     return <div id="homeContainer" className="container"><p>This is a portfolio of projects used in investigations into technologies by London based, full stack developer, Paul Potsides.</p>

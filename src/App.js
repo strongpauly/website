@@ -5,11 +5,11 @@ import {Router} from 'react-router-dom';
 import {LinkContainer} from 'react-router-bootstrap';
 import createHistory from 'history/createBrowserHistory';
 
-import Routes from './Routes';
+import {Routes} from './Routes';
 
 const history = createHistory();
 
-class App extends Component {
+export class App extends Component {
 
   render() {
     return (
@@ -59,5 +59,3 @@ class App extends Component {
     );
   }
 }
-
-export default App;

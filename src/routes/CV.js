@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import HiFrame from '../components/HiFrame';
 
-export default class CV extends Component {
+export class CV extends Component {
 
   render() {
     return <div id="cvContainer">

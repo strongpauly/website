@@ -1,5 +1,5 @@
 import React from 'react';
-import Fleetway from './Fleetway';
+import {Fleetway} from './Fleetway';
 import {shallow} from 'enzyme';
 
 /* eslint-env jest */
