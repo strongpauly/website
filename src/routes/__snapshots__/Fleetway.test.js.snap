@@ -27,7 +27,7 @@ exports[`Home renders without crashing 1`] = `
       onCreate={[Function]}
       onError={[Function]}
       onLoad={[Function]}
-      url="http://travelsmart.stage.fleetway.com/ng/injector.js?aid=fw"
+      url="https://bookings.fleetwaytravel.com/ng/injector.js?aid=fw"
     />
   </div>
   <p>

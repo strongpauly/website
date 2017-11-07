@@ -10,7 +10,7 @@ export class Fleetway extends Component {
       <div style={{minHeight: '150px', marginTop: '20px', marginBottom: '20px'}}>
         <search-widget></search-widget>
         <Script
-          url="http://travelsmart.stage.fleetway.com/ng/injector.js?aid=fw"
+          url="https://bookings.fleetwaytravel.com/ng/injector.js?aid=fw"
           attributes={{id: 'travelsmartInjector'}} />
       </div>
       <p>The injector.js is vanilla javascript that creates additional script and css tags once it has been loaded.  Fleetway partner with other
