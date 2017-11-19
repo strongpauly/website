@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import PropTypes from 'prop-types';
 
-export default class HiFrame extends Component {
+export class HiFrame extends Component {
   static propTypes = {
     src: PropTypes.string,
     title: PropTypes.string

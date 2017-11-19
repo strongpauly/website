@@ -1,5 +1,5 @@
 import React from 'react';
-import HiFrame from './HiFrame';
+import {HiFrame} from './HiFrame';
 import {shallow} from 'enzyme';
 
 /* eslint-env jest */

@@ -52,7 +52,9 @@ export class App extends Component {
             </Col>
           </Row>
           <Row>
-            <Routes/>
+            <Col xs={12}>
+              <Routes/>
+            </Col>
           </Row>
         </Grid>
       </Router>

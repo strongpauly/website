@@ -4,7 +4,7 @@ import Script from 'react-load-script';
 export class Fleetway extends Component {
 
   render() {
-    return <div id="fleetwayContainer" className="container">
+    return <div id="fleetwayContainer">
       <p>This is a injectable search bar that I developed for a client Fleetway travel.  It downloads an injector js file which then
       requests other css and javascript files to build the angular component.  Executing the search will take you to their site.</p>
       <div style={{minHeight: '150px', marginTop: '20px', marginBottom: '20px'}}>

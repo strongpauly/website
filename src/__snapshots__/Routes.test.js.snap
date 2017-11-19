@@ -5,41 +5,47 @@ exports[`Routes renders correct routes 1`] = `
   bsClass="row"
   componentClass="div"
 >
-  <Switch>
-    <Redirect
-      exact={true}
-      from="/"
-      push={false}
-      to="/r/home"
+  <Col
+    bsClass="col"
+    componentClass="div"
+    xs={12}
+  >
+    <Switch>
+      <Redirect
+        exact={true}
+        from="/"
+        push={false}
+        to="/r/home"
+      />
+      <Route
+        component={[Function]}
+        path="/r/home"
+      />
+    </Switch>
+    <Route
+      component={[Function]}
+      path="/r/cv"
     />
     <Route
       component={[Function]}
-      path="/r/home"
+      path="/r/oss"
     />
-  </Switch>
-  <Route
-    component={[Function]}
-    path="/r/cv"
-  />
-  <Route
-    component={[Function]}
-    path="/r/oss"
-  />
-  <Route
-    component={[Function]}
-    path="/r/minesweeper"
-  />
-  <Route
-    component={[Function]}
-    path="/r/wordgame"
-  />
-  <Route
-    component={[Function]}
-    path="/r/tetris"
-  />
-  <Route
-    component={[Function]}
-    path="/r/fleetway"
-  />
+    <Route
+      component={[Function]}
+      path="/r/minesweeper"
+    />
+    <Route
+      component={[Function]}
+      path="/r/wordgame"
+    />
+    <Route
+      component={[Function]}
+      path="/r/tetris"
+    />
+    <Route
+      component={[Function]}
+      path="/r/fleetway"
+    />
+  </Col>
 </Row>
 `;

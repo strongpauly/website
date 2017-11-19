@@ -4,9 +4,7 @@ exports[`Tetris renders without crashing 1`] = `
 <div
   id="tetrisContainer"
 >
-  <div
-    className="container"
-  >
+  <p>
     The classic Gameboy game implemented with react and redux. It's source can be found 
     <a
       href="https://github.com/strongpauly/tetris"
@@ -14,7 +12,7 @@ exports[`Tetris renders without crashing 1`] = `
       here
     </a>
     .
-  </div>
+  </p>
   <HiFrame
     src="/tetris"
     title="tetris"

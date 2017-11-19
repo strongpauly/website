@@ -4,9 +4,7 @@ exports[`WordGame renders without crashing 1`] = `
 <div
   id="wordGameContainer"
 >
-  <div
-    className="container"
-  >
+  <p>
     A simple word game implemented using react.  Select words of the length suggested by the box below the grid.
     <ul>
       <li>
@@ -26,7 +24,7 @@ exports[`WordGame renders without crashing 1`] = `
       here
     </a>
     .
-  </div>
+  </p>
   <HiFrame
     src="/wordgame"
     title="wordgame"

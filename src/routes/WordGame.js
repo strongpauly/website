@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import HiFrame from '../components/HiFrame';
+import {HiFrame} from '../components/HiFrame';
 
 export class WordGame extends Component {
 
   render() {
     return <div id="wordGameContainer">
-      <div className="container">
+      <p>
         A simple word game implemented using react.  Select words of the length suggested by the box below the grid.
         <ul>
           <li>The + will start a new game.</li>
@@ -14,7 +14,7 @@ export class WordGame extends Component {
         </ul>
         If the game can no longer be completed, the ♺ will rotate.
         It&apos;s source can be found <a href="https://www.github.com/strongpauly/wordgame">here</a>.
-      </div>
+      </p>
       <HiFrame src="/wordgame" title="wordgame"></HiFrame>
     </div>;
   }
