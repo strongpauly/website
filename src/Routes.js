@@ -9,7 +9,7 @@ import {Oss} from './routes/Oss';
 import {Minesweeper} from './routes/Minesweeper';
 import {WordGame} from './routes/WordGame';
 import {Tetris} from './routes/Tetris';
-import {Fleetway} from './routes/Fleetway';
+// import {Fleetway} from './routes/Fleetway';
 
 export class Routes extends Component {
   render() {
@@ -25,7 +25,7 @@ export class Routes extends Component {
           <Route path="/r/minesweeper" component={Minesweeper} />
           <Route path="/r/wordgame" component={WordGame} />
           <Route path="/r/tetris" component={Tetris}/>
-          <Route path="/r/fleetway" component={Fleetway}/>
+          {/* <Route path="/r/fleetway" component={Fleetway}/> */}
         </Col>
       </Row>
     );
