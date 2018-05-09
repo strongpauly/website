@@ -42,6 +42,10 @@ exports[`Routes renders correct routes 1`] = `
       component={[Function]}
       path="/r/tetris"
     />
+    <Route
+      component={[Function]}
+      path="/r/platformer"
+    />
   </Col>
 </Row>
 `;
