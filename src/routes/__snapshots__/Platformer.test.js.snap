@@ -5,7 +5,13 @@ exports[`Platformer renders without crashing 1`] = `
   id="platformerContainer"
 >
   <p>
-    A work in progress writing a platform game using react.
+    A work in progress writing a platform game using react. It's source can be found 
+    <a
+      href="https://github.com/strongpauly/platformer"
+    >
+      here
+    </a>
+    .
   </p>
   <HiFrame
     src="/platformer"
