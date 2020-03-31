@@ -2,7 +2,7 @@
   "name": "potsides",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://paul.potsides.com",
+  "homepage": "https://paul.potsides.com",
   "dependencies": {
     "history": "^4.7.2",
     "prop-types": "^15.6.0",

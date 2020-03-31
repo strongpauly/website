@@ -65,7 +65,7 @@ data "aws_acm_certificate" "ssl" {
 resource "aws_cloudfront_distribution" "cdn" {
   enabled             = true
   default_root_object = "index.html"
-  aliases             = ["${local.appUrl}"]
+  aliases             = ["${local.appUrl}", "paul.potsides.com"]
   is_ipv6_enabled     = true
 
   origin {
