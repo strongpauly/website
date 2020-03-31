@@ -68,10 +68,47 @@ resource "aws_cloudfront_distribution" "cdn" {
   aliases             = ["${local.appUrl}", "paul.potsides.com"]
   is_ipv6_enabled     = true
 
+  ordered_cache_behavior {
+    allowed_methods        = ["GET","HEAD"] 
+    cached_methods         = ["GET", "HEAD"]
+    compress               = false
+    default_ttl            = 86400
+    max_ttl                = 31536000
+    min_ttl                = 0
+    path_pattern           = "/minesweeper/*"
+    smooth_streaming       = false
+    target_origin_id       = "S3-minesweeper.potsides.com"
+    trusted_signers        = []
+    viewer_protocol_policy = "redirect-to-https"
+
+    forwarded_values {
+      headers                 = []
+      query_string            = true
+      query_string_cache_keys = []
+
+      cookies {
+          forward           = "none"
+          whitelisted_names = []
+        }
+    }
+  }
+
   origin {
     domain_name = aws_s3_bucket.app_bucket.website_endpoint
     origin_id   = "S3-${local.appUrl}"
 
+    custom_origin_config {
+      http_port                = "80"
+      https_port               = "443"
+      origin_keepalive_timeout = 5
+      origin_protocol_policy   = "http-only"
+      origin_ssl_protocols     = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+    }
+  }
+
+  origin {
+    domain_name = "minesweeper.potsides.com.s3.amazonaws.com"
+    origin_id   = "S3-minesweeper.potsides.com"
     custom_origin_config {
       http_port                = "80"
       https_port               = "443"
