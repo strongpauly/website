@@ -5,7 +5,8 @@ exports[`Minesweeper renders without crashing 1`] = `
   id="minesweeperContainer"
 >
   <p>
-    An implementation of the classic game using react. It's source can be found 
+    An implementation of the classic game using react. It's source can be found
+     
     <a
       href="https://www.github.com/strongpauly/minesweeper"
     >
@@ -14,7 +15,7 @@ exports[`Minesweeper renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="/minesweeper"
+    src="/minesweeper/index.html"
     title="minesweeper"
   />
 </div>
