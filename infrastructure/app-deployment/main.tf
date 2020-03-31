@@ -93,6 +93,106 @@ resource "aws_cloudfront_distribution" "cdn" {
     }
   }
 
+  ordered_cache_behavior {
+    allowed_methods        = ["GET","HEAD"] 
+    cached_methods         = ["GET", "HEAD"]
+    compress               = false
+    default_ttl            = 86400
+    max_ttl                = 31536000
+    min_ttl                = 0
+    path_pattern           = "/cv/*"
+    smooth_streaming       = false
+    target_origin_id       = "S3-cv.potsides.com"
+    trusted_signers        = []
+    viewer_protocol_policy = "redirect-to-https"
+
+    forwarded_values {
+      headers                 = []
+      query_string            = true
+      query_string_cache_keys = []
+
+      cookies {
+          forward           = "none"
+          whitelisted_names = []
+        }
+    }
+  }
+
+  ordered_cache_behavior {
+    allowed_methods        = ["GET","HEAD"] 
+    cached_methods         = ["GET", "HEAD"]
+    compress               = false
+    default_ttl            = 86400
+    max_ttl                = 31536000
+    min_ttl                = 0
+    path_pattern           = "/platformer/*"
+    smooth_streaming       = false
+    target_origin_id       = "S3-platformer.potsides.com"
+    trusted_signers        = []
+    viewer_protocol_policy = "redirect-to-https"
+
+    forwarded_values {
+      headers                 = []
+      query_string            = true
+      query_string_cache_keys = []
+
+      cookies {
+          forward           = "none"
+          whitelisted_names = []
+        }
+    }
+  }
+
+  ordered_cache_behavior {
+    allowed_methods        = ["GET","HEAD"] 
+    cached_methods         = ["GET", "HEAD"]
+    compress               = false
+    default_ttl            = 86400
+    max_ttl                = 31536000
+    min_ttl                = 0
+    path_pattern           = "/tetris/*"
+    smooth_streaming       = false
+    target_origin_id       = "S3-tetris.potsides.com"
+    trusted_signers        = []
+    viewer_protocol_policy = "redirect-to-https"
+
+    forwarded_values {
+      headers                 = []
+      query_string            = true
+      query_string_cache_keys = []
+
+      cookies {
+          forward           = "none"
+          whitelisted_names = []
+        }
+    }
+  }
+
+  ordered_cache_behavior {
+    allowed_methods        = ["GET","HEAD"] 
+    cached_methods         = ["GET", "HEAD"]
+    compress               = false
+    default_ttl            = 86400
+    max_ttl                = 31536000
+    min_ttl                = 0
+    path_pattern           = "/wordgame/*"
+    smooth_streaming       = false
+    target_origin_id       = "S3-wordgame.potsides.com"
+    trusted_signers        = []
+    viewer_protocol_policy = "redirect-to-https"
+
+    forwarded_values {
+      headers                 = []
+      query_string            = true
+      query_string_cache_keys = []
+
+      cookies {
+          forward           = "none"
+          whitelisted_names = []
+        }
+    }
+  }
+
   origin {
     domain_name = aws_s3_bucket.app_bucket.website_endpoint
     origin_id   = "S3-${local.appUrl}"
