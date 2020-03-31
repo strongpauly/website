@@ -5,7 +5,7 @@ exports[`WordGame renders without crashing 1`] = `
   id="wordGameContainer"
 >
   <p>
-    A simple word game implemented using react.  Select words of the length suggested by the box below the grid.
+    A simple word game implemented using react. Select words of the length suggested by the box below the grid.
     <ul>
       <li>
         The + will start a new game.
@@ -17,7 +17,8 @@ exports[`WordGame renders without crashing 1`] = `
         The ? will provide a hint. 
       </li>
     </ul>
-    If the game can no longer be completed, the ♺ will rotate. It's source can be found 
+    If the game can no longer be completed, the ♺ will rotate. It's source can be found
+     
     <a
       href="https://www.github.com/strongpauly/wordgame"
     >
@@ -26,7 +27,7 @@ exports[`WordGame renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="/wordgame"
+    src="/wordgame/index.html"
     title="wordgame"
   />
 </div>

@@ -5,13 +5,15 @@ exports[`CV renders without crashing 1`] = `
   id="cvContainer"
 >
   <p>
-    CV implemented using react, react-bootstrap and 
+    CV implemented using react, react-bootstrap and
+     
     <a
       href="https://jsonresume.org/schema/"
     >
       jsonresume
     </a>
-    . It's source can be found 
+    . It's source can be found
+     
     <a
       href="https://www.github.com/strongpauly/cv"
     >
@@ -20,7 +22,7 @@ exports[`CV renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="/cv"
+    src="/cv/index.html"
     title="cv"
   />
 </div>

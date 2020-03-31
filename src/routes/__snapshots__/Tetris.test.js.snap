@@ -5,7 +5,8 @@ exports[`Tetris renders without crashing 1`] = `
   id="tetrisContainer"
 >
   <p>
-    The classic Gameboy game implemented with react and redux. It's source can be found 
+    The classic Gameboy game implemented with react and redux. It's source can be found
+     
     <a
       href="https://github.com/strongpauly/tetris"
     >
@@ -14,7 +15,7 @@ exports[`Tetris renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="/tetris"
+    src="/tetris/index.html"
     title="tetris"
   />
 </div>
