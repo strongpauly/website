@@ -218,6 +218,55 @@ resource "aws_cloudfront_distribution" "cdn" {
     }
   }
 
+  origin {
+    domain_name = "cv.potsides.com.s3.amazonaws.com"
+    origin_id   = "S3-cv.potsides.com"
+    custom_origin_config {
+      http_port                = "80"
+      https_port               = "443"
+      origin_keepalive_timeout = 5
+      origin_protocol_policy   = "http-only"
+      origin_ssl_protocols     = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+    }
+  }
+
+  origin {
+    domain_name = "platformer.potsides.com.s3.amazonaws.com"
+    origin_id   = "S3-platformer.potsides.com"
+    custom_origin_config {
+      http_port                = "80"
+      https_port               = "443"
+      origin_keepalive_timeout = 5
+      origin_protocol_policy   = "http-only"
+      origin_ssl_protocols     = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+    }
+  }
+
+
+  origin {
+    domain_name = "tetris.potsides.com.s3.amazonaws.com"
+    origin_id   = "S3-tetris.potsides.com"
+    custom_origin_config {
+      http_port                = "80"
+      https_port               = "443"
+      origin_keepalive_timeout = 5
+      origin_protocol_policy   = "http-only"
+      origin_ssl_protocols     = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+    }
+  }
+
+  origin {
+    domain_name = "wordgame.potsides.com.s3.amazonaws.com"
+    origin_id   = "S3-wordgame.potsides.com"
+    custom_origin_config {
+      http_port                = "80"
+      https_port               = "443"
+      origin_keepalive_timeout = 5
+      origin_protocol_policy   = "http-only"
+      origin_ssl_protocols     = ["TLSv1", "TLSv1.1", "TLSv1.2"]
+    }
+  }
+
   price_class = "PriceClass_100"
 
   restrictions {
