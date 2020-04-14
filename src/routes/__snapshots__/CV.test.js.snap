@@ -22,7 +22,7 @@ exports[`CV renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="/cv/index.html"
+    src="https://cv.potsides.com/cv"
     title="cv"
   />
 </div>
