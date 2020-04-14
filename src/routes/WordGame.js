@@ -18,7 +18,7 @@ export class WordGame extends Component {
           <a href="https://www.github.com/strongpauly/wordgame">here</a>.
         </p>
         <HiFrame
-          src="https://wordgame.potsides.com/wordgame"
+          src="https://wordgame.potsides.com/wordgame/index.html"
           title="wordgame"
         ></HiFrame>
       </div>

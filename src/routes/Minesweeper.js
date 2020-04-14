@@ -11,7 +11,7 @@ export class Minesweeper extends Component {
           <a href="https://www.github.com/strongpauly/minesweeper">here</a>.
         </p>
         <HiFrame
-          src="https://minesweeper.potsides.com/minesweeper"
+          src="https://minesweeper.potsides.com/minesweeper/index.html"
           title="minesweeper"
         ></HiFrame>
       </div>

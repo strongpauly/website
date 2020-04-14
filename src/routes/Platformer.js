@@ -11,7 +11,7 @@ export class Platformer extends Component {
           <a href="https://github.com/strongpauly/platformer">here</a>.
         </p>
         <HiFrame
-          src="https://platformer.potsides.com/platformer"
+          src="https://platformer.potsides.com/platformer/index.html"
           title="platformer"
         ></HiFrame>
       </div>

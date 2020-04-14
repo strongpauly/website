@@ -15,7 +15,7 @@ exports[`Platformer renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="https://platformer.potsides.com/platformer"
+    src="https://platformer.potsides.com/platformer/index.html"
     title="platformer"
   />
 </div>

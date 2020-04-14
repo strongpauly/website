@@ -15,7 +15,7 @@ exports[`Tetris renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="https://tetris.potsides.com/tetris"
+    src="https://tetris.potsides.com/tetris/index.html"
     title="tetris"
   />
 </div>

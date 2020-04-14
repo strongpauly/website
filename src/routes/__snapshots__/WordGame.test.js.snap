@@ -27,7 +27,7 @@ exports[`WordGame renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="https://wordgame.potsides.com/wordgame"
+    src="https://wordgame.potsides.com/wordgame/index.html"
     title="wordgame"
   />
 </div>

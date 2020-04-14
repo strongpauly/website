@@ -11,7 +11,7 @@ export class Tetris extends Component {
           <a href="https://github.com/strongpauly/tetris">here</a>.
         </p>
         <HiFrame
-          src="https://tetris.potsides.com/tetris"
+          src="https://tetris.potsides.com/tetris/index.html"
           title="tetris"
         ></HiFrame>
       </div>
