@@ -11,7 +11,7 @@ export class CV extends Component {
           source can be found{" "}
           <a href="https://www.github.com/strongpauly/cv">here</a>.
         </p>
-        <HiFrame src="https://cv.potsides.com" title="cv"></HiFrame>
+        <HiFrame src="https://cv.potsides.com/cv" title="cv"></HiFrame>
       </div>
     );
   }
