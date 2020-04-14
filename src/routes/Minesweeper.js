@@ -10,7 +10,10 @@ export class Minesweeper extends Component {
           can be found{" "}
           <a href="https://www.github.com/strongpauly/minesweeper">here</a>.
         </p>
-        <HiFrame src="/minesweeper/index.html" title="minesweeper"></HiFrame>
+        <HiFrame
+          src="https://minesweeper.potsides.com/minesweeper"
+          title="minesweeper"
+        ></HiFrame>
       </div>
     );
   }

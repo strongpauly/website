@@ -10,7 +10,10 @@ export class Tetris extends Component {
           source can be found{" "}
           <a href="https://github.com/strongpauly/tetris">here</a>.
         </p>
-        <HiFrame src="/tetris/index.html" title="tetris"></HiFrame>
+        <HiFrame
+          src="https://tetris.potsides.com/tetris"
+          title="tetris"
+        ></HiFrame>
       </div>
     );
   }

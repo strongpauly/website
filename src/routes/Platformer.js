@@ -10,7 +10,10 @@ export class Platformer extends Component {
           source can be found{" "}
           <a href="https://github.com/strongpauly/platformer">here</a>.
         </p>
-        <HiFrame src="/platformer/index.html" title="platformer"></HiFrame>
+        <HiFrame
+          src="https://platformer.potsides.com/platformer"
+          title="platformer"
+        ></HiFrame>
       </div>
     );
   }

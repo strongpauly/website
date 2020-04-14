@@ -15,7 +15,7 @@ exports[`Minesweeper renders without crashing 1`] = `
     .
   </p>
   <HiFrame
-    src="/minesweeper/index.html"
+    src="https://minesweeper.potsides.com/minesweeper"
     title="minesweeper"
   />
 </div>
