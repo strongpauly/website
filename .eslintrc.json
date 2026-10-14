@@ -13,8 +13,8 @@
         "ecmaVersion": 6,
         "sourceType": "module"
     },
-    "extends": ["eslint:recommended", "plugin:react/recommended"],
-    "parser": "babel-eslint",
+    "root": true,
+    "extends": ["react-app", "react-app/jest", "eslint:recommended", "plugin:react/recommended"],
     "plugins": [
         "react"
     ],

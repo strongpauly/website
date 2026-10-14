@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 export class Home extends Component {
   render() {
@@ -11,7 +11,7 @@ export class Home extends Component {
         <p>Currently, this is mainly client side and react based projects.</p>
         <p>
           This site was built using react, react-bootstrap and react-router.
-          It&apos;s source can be found{" "}
+          It&apos;s source can be found{' '}
           <a href="https://www.github.com/strongpauly/website">here</a>
         </p>
       </div>

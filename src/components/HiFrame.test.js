@@ -1,6 +1,6 @@
 import React from 'react';
 import {HiFrame} from './HiFrame';
-import {shallow} from 'enzyme';
+import {shallow, mount} from 'enzyme';
 
 /* eslint-env jest */
 
@@ -10,15 +10,26 @@ describe('HiFrame', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('will resize frame onLoad', () => {
-    const app = shallow(<HiFrame src="somewhere" title="something"/>);
-    const iframe = app.find('iframe');
-    expect(iframe).toHaveLength(1);
-    const focus = jest.fn();
-    const mock = {style:{}, contentDocument: {body: {scrollHeight: 8}}, contentWindow:{focus:focus}};
-    iframe.simulate('load', {target: mock});
-    expect(mock.style.height).toEqual('8px');
-    expect(focus).toHaveBeenCalled();
+  it('will fill the remaining viewport height', () => {
+    window.innerHeight = 1000;
+    const app = mount(<HiFrame src="somewhere" title="something"/>);
+    const iframe = app.find('iframe').getDOMNode();
+    expect(iframe.style.height).toEqual('1000px');
 
+    iframe.getBoundingClientRect = () => ({top: 200});
+    window.dispatchEvent(new Event('resize'));
+    expect(iframe.style.height).toEqual('800px');
+
+    window.innerHeight = 400;
+    window.dispatchEvent(new Event('resize'));
+    expect(iframe.style.height).toEqual('300px');
+    app.unmount();
+  });
+
+  it('will focus frame onLoad', () => {
+    const app = shallow(<HiFrame src="somewhere" title="something"/>);
+    const focus = jest.fn();
+    app.find('iframe').simulate('load', {target: {contentWindow: {focus}}});
+    expect(focus).toHaveBeenCalled();
   });
 });

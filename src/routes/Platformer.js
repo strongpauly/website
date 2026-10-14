@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { HiFrame } from "../components/HiFrame";
+import React, { Component } from 'react';
+import { HiFrame } from '../components/HiFrame';
 
 export class Platformer extends Component {
   render() {
@@ -7,7 +7,7 @@ export class Platformer extends Component {
       <div id="platformerContainer">
         <p>
           A work in progress writing a platform game using react. It&apos;s
-          source can be found{" "}
+          source can be found{' '}
           <a href="https://github.com/strongpauly/platformer">here</a>.
         </p>
         <HiFrame

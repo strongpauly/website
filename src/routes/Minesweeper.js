@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { HiFrame } from "../components/HiFrame";
+import React, { Component } from 'react';
+import { HiFrame } from '../components/HiFrame';
 
 export class Minesweeper extends Component {
   render() {
@@ -7,7 +7,7 @@ export class Minesweeper extends Component {
       <div id="minesweeperContainer">
         <p>
           An implementation of the classic game using react. It&apos;s source
-          can be found{" "}
+          can be found{' '}
           <a href="https://www.github.com/strongpauly/minesweeper">here</a>.
         </p>
         <HiFrame
