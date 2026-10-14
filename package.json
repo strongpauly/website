@@ -21,6 +21,9 @@
     "react-scripts": "1.1.4",
     "react-test-renderer": "^16.2.0"
   },
+  "overrides": {
+    "cheerio": "1.0.0-rc.12"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
