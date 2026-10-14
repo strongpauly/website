@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { HiFrame } from "../components/HiFrame";
+import React, { Component } from 'react';
+import { HiFrame } from '../components/HiFrame';
 
 export class WordGame extends Component {
   render() {
@@ -14,7 +14,7 @@ export class WordGame extends Component {
             <li>The ? will provide a hint. </li>
           </ul>
           If the game can no longer be completed, the ♺ will rotate. It&apos;s
-          source can be found{" "}
+          source can be found{' '}
           <a href="https://www.github.com/strongpauly/wordgame">here</a>.
         </p>
         <HiFrame

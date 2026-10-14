@@ -7,7 +7,7 @@ import {CV} from './routes/CV';
 import {Minesweeper} from './routes/Minesweeper';
 import {WordGame} from './routes/WordGame';
 import {Tetris} from './routes/Tetris';
-import {Fleetway} from './routes/Fleetway';
+// import {Fleetway} from './routes/Fleetway';
 import { Platformer } from './routes/Platformer.js';
 /* eslint-env jest */
 
